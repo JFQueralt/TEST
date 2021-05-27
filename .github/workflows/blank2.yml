@@ -24,7 +24,9 @@ jobs:
       - name: Synchronize labels
         uses: julb/action-manage-label@v1
         with:
-          from: .github/config/labels.yml
+          from:
+            .github/config/labels.yml
+            https://raw.githubusercontent.com/JFQueralt/TEST/main/SampleLabelURL.yml
           skip_delete: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
