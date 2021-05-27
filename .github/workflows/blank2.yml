@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Sync Labels
 
 # Controls when the action will run. 
 on:
@@ -27,5 +27,5 @@ jobs:
           from: .github/config/labels.yml
           skip_delete: false
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
