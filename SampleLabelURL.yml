@@ -1,3 +1,9 @@
 - name: "type: blocker URL"
   color: "349811"
   description: "A blocker for the release via URL"
+
+# Channels
+
+- name: "type: blocker URLXXX"
+  color: "745811"
+  description: "A blocker for the release via URL TWICE"
